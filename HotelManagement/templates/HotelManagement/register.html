@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="regPageContent">
-            <form class="regForm" method="post" id="reg_form" action="http://127.0.0.1:8000/verify/"> {% csrf_token %}
+            <form class="regForm" method="post" id="reg_form" action="{%url 'verification-page' %}"> {% csrf_token %}
                 <h3>Register Here</h3>
                 <div class="form-group">
                     <label for="Name">Name</label>
