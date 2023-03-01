@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="verifyPageContent">
-        <form autocomplete="off" class="verifyForm" method="post" id="code_form" action="http://127.0.0.1:8000"> {% csrf_token %}
+        <form autocomplete="off" class="verifyForm" method="post" id="code_form" action="{%url 'verification-page' %}"> {% csrf_token %}
             <div class="form-group" id="OTP">
                 <label for="verification_code">Verification Code</label>
                 <input id="verification_code" type="text" name="verification_code" placeholder="OTP">
